@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula de HTML e CSS</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo CSS externo -->
 </head>
 <body>
+    <!-- Cabeçalho da página -->
     <header>
         <h1>Minha Página Exemplo</h1>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li> <!-- Link para a seção Sobre -->
+                <li><a href="#servicos">Serviços</a></li> <!-- Link para a seção Serviços -->
+                <li><a href="#contato">Contato</a></li> <!-- Link para a seção Contato -->
             </ul>
         </nav>
     </header>
+    
     <main>
-        <section id="sobre">    
-            <h2>Sobre nós</h2>
-            <p>Somos uma empresa dedicada a ensinar HTML e CSS de forma simples 
-                e eficiente.</p>
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa dedicada a ensinar HTML e CSS de forma simples e eficiente.</p>
         </section>
+        
+        <!-- Seção Serviços -->
         <section id="servicos">
             <h2>Nossos Serviços</h2>
             <ul>
@@ -31,16 +35,18 @@
                 <li>Suporte e Manutenção</li>
             </ul>
         </section>
+    
+        <!-- Exemplo de tabela -->
         <section>
+            <h2>Tabela Exemplo</h2>
             <table>
-                <h2>Tabela Exemplo</h2>
                 <tr>
                     <th>Nome</th>
                     <th>Idade</th>
                     <th>Profissão</th>
                 </tr>
                 <tr>
-                    <td>João</td>
+                    <td>Ana</td>
                     <td>25</td>
                     <td>Designer</td>
                 </tr>
@@ -51,7 +57,28 @@
                 </tr>
             </table>
         </section>
+        
+        <!-- Formulário de contato -->
+        <section id="contato">
+            <h2>Fale Conosco</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> <!-- Campo para o nome -->
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <!-- Campo para o email -->
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea> <!-- Área de texto para a mensagem -->
+                
+                <button type="submit">Enviar</button> <!-- Botão de envio -->
+            </form>
+        </section>
     </main>
-
+    
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2025 Minha Página. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
